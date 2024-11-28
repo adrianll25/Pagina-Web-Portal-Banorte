@@ -1,0 +1,81 @@
+body{
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Play', sans-serif;
+}
+
+.container{
+
+}
+
+.img-ind{
+    width: 100%;
+}
+
+.images{
+    width: 800px;
+    height: 380px;
+    position: absolute;
+    right: 0;
+}
+
+.swiper{
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.swiper-slide h3{
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    color: #fff;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.swiper-slide img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.rows{
+    width: 180px;
+    position: absolute;
+    right: 620px;
+    bottom: 280px;
+}
+
+.swiper-button-prev{
+    height: 50px;
+    width: 50px;
+    border: 2px solid #ffff;
+    border-radius: 50%;
+    font-size: 15px;
+}
+
+.swiper-button-next{
+    height: 50px;
+    width: 50px;
+    border: 2px solid #ffff;
+    border-radius: 50%;
+    font-size: 15px;
+}
+
+.swiper-button-prev::after{
+    font-size: 25px;
+    color: #fff;
+}
+
+.swiper-button-next::after{
+    font-size: 25px;
+    color: #fff;
+}

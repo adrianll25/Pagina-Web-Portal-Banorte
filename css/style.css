@@ -1,0 +1,426 @@
+nav{
+background-image: linear-gradient(to top, #eb0029 0%, #ff0844 100%);
+font-family: 'Kanit', sans-serif;
+font-family: 'Play', sans-serif;
+}
+
+.body{
+    background: #f1fbff;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Play', sans-serif;
+
+}
+
+h1, h2, h3, h5, p{
+    color: #eb0029;
+}
+.B-Logo{
+    height: 30px;
+}
+
+:root{
+    --red: #eb0029;
+    --red-dark: #ff0844;
+    --light-grey: #f1fbff;
+}
+
+*{
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Play', sans-serif;
+}
+
+.container{
+    max-width: 1200px;
+}
+
+.bg-red{
+    background-color: var(--red)!important;
+}
+
+.bg-light-grey{
+    background-color: var(--light-grey)!important;
+}
+
+.text-color{
+    color: var(--red);
+}
+
+ul li{
+    list-style-position: none;
+}
+
+.display-1{
+    letter-spacing: 1px;
+}
+
+header{
+  height: 100vh;  
+}
+
+.phone-img{
+    width: 500px;
+    height: 602px;
+}
+
+.circle-icon{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: var(--red);
+}
+
+.lh-lg{
+    line-height: 1.7!important;
+}
+
+/* Carrusel*/
+.c-item{
+   height: 100vh;
+   min-height: 300px; 
+   background: no-repeat center center scroll;
+}
+
+.c-img{
+    height: 700px;
+}
+
+.c-color{
+    color: var(--red)!important;
+}
+
+/* Galeria*/
+.container-galeria{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.gal_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+.gal_grid{
+    display: grid;
+    height: 550px;
+    grid-template-areas: 
+    "img1 img1 img2 img3"
+    "img4 img5 img6 img6";
+    gap: 10px;
+}
+
+.gal_item{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.gal_item:nth-of-type(1){
+    grid-area: img1;
+}
+
+.gal_item:nth-of-type(2){
+    grid-area: img2;
+}
+
+.gal_item:nth-of-type(3){
+    grid-area: img3;
+}
+
+.gal_item:nth-of-type(4){
+    grid-area: img4;
+}
+
+.gal_item:nth-of-type(5){
+    grid-area: img5;
+}
+
+.gal_item:nth-of-type(6){
+    grid-area: img6;
+}
+
+.gal_hover{
+    position: absolute;
+    background: rgba(235, 0, 41, .5);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateX(100%);
+    cursor: pointer;
+    transition: transform .3s ease-in-out;
+}
+
+.gal_item:hover .gal_hover{
+    transform: translateX(0%);
+
+}
+
+.ban-p{
+    font-size: medium;
+}
+
+.ch-img{
+    height: 500px;
+}
+
+/* Slide */
+.ban-slide{
+    width: 580px;
+    height: 680px;
+}
+
+.img-1{
+    background-image: url('../img/checo.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-2{
+    background-image: url('../img/mexico-ban.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-3{
+    background-image: url('../img/slide-1.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img-4{
+    background-image: url('../img/slide-2.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img-5{
+    background-image: url('../img/slide-3.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-6{
+    background-image: url('../img/slide-4.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-7{
+    background-image: url('../img/slide-5.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.video-sec{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.video-sec .hero-sec{
+    width: 100%;
+}
+
+.video-sec .hero-sec .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.video-sec .hero-sec .caption{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+#swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+  }
+  
+  .swiper-slide {
+    width: 25%;
+    height: 100%;
+    border: 1px solid black;
+  }
+  
+  .card {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 3;
+  }
+  
+  .card img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .card h2 {
+    margin-top: 0;
+  }
+  
+  .card p {
+    margin-top: 10px;
+  }
+  
+  .swiper-pagination {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .hero {
+    background-image: url(../img/Banorte_edi.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.heroPymes {
+    background-image: url(../img/shopping-1165437_1280.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 2;
+}
+
+.heroJov {
+    background-image: url(../img/pexels-rdne-stock-project-7915492.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 2;
+}
+
+.heroJov::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.heroPymes::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.heroGob{
+    background-image: url(../img/mexico-city-2719368_1280.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 2;
+}
+
+.hero::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.heroGob::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.btn-Empresas{
+    background-color: #eb0029;
+    
+}
+
+i{
+    color: #eb0029;
+}
+
+.li i{
+    color: #fff;
+}
+
+.rating-box{
+    position: relative;
+    background: #e24747;
+    padding: 25px 50px 35px;
+    border-radius: 25px;
+    box-shadow: 0 5px 10 px rgba(0, 0, 0, 0.05);
+}
+.rating-box header{
+    font-size: 22px;
+    color: #1f1b1b;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.rating-box .stars{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.stars i {
+    color: #e6e6e6;
+    font-size: 35px;
+    cursor: pointer;
+    transition: color 0;
+}
+.stars i.active{
+    color: #ff9c1a;
+}
